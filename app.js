@@ -57,7 +57,7 @@ store.on("error", ()=>{
 
 app.use(session({
     store,
-    secret : "dkshicfwjfckaWcflk" ,
+    secret : process.env.SESSION_SECRET ,
     saveUninitialized : false,
     resave : false,
 }))
