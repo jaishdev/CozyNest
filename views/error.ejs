@@ -1,0 +1,11 @@
+<% layout('/layouts/boilerplate') -%>
+
+  <div class="row">
+    <div class="alert alert-danger" role="alert">
+      <!-- <h1>404</h1> -->
+      <% let messages = Array.isArray(message) ? message : [message]; %>
+      <% for(let msg of messages){ %>
+        <div class="mb-2"><span>&#10060; </span> <%= msg %></div>
+      <% } %>
+    </div>
+  </div>

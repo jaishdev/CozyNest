@@ -1,0 +1,15 @@
+<% layout('/layouts/boilerplate') -%>
+<body>
+    <form action="/listings/<%= listing.id %>?_method=DELETE" method="post">
+        <label for="title">Title : 
+            <input type="text" name="title">
+        </label><br><br>
+        <label for="country">Country : 
+            <input type="text" name="country">
+        </label><br><br>
+        <button>Delete</button><br><br>
+    </form>
+    <form action="/listings" method="get">
+        <button>Back to listings</button>
+    </form>
+</body>
