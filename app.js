@@ -1,12 +1,10 @@
 if(process.env.NODE_ENV != "production"){
     require('dotenv').config();
 };
-// console.log(process.env)
 
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
-// mongoUrl = "mongodb://127.0.0.1:27017/Roamio";
 DB_url = process.env.ATLAS_DB_URL;
 const path = require("path");
 const methodOverride = require('method-override')
@@ -89,11 +87,6 @@ app.all("*" , (req, res, next) => {
 
 app.use((err, req, res, next) => {
     let { statusCode = 500 , message = "something went wrong" } = err;
-    // console.error(err);
-    // res.status(statusCode).json({
-    //     status:statusCode,
-    //     message:message,
-    // })
     res.status(statusCode).render("error.ejs", { message })
 })
 
