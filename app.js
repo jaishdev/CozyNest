@@ -24,7 +24,7 @@ const listingsRouter = require('./routes/listings.js')
 const reviewsRouter = require('./routes/reviews.js')
 const userRouter = require('./routes/user.js')
 
-main().then(() => { console.log("CozyNest connected"); }).catch((err) => { console.log(err); });
+main().then(() => { console.log("CozyNest connected"); }).catch((err) => { console.log("err") });
 
 async function main() {
     await mongoose.connect(DB_url);
