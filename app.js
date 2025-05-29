@@ -53,9 +53,11 @@ store.on("error", ()=>{
     console.log("error in mongo session----------- " , err)
 })
 
+
+
 app.use(session({
     store,
-    secret : process.env.SECRET ,
+    secret : "dkshicfwjfckaWcflk" ,
     saveUninitialized : false,
     resave : false,
 }))
