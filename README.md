@@ -3,7 +3,7 @@
 
 **Live Site:** [https://cozynest-jd6g.onrender.com](https://cozynest-jd6g.onrender.com)
 
-Hi! So **CozyNest** is a personal backend-focused project I built to practice CRUD operations, user authentication, and working with image uploads. I named it **CozyNest** – the idea was to create a simple platform where users can post "listings" (kind of like properties or products) and interact with them.
+Hi! So **CozyNest** is a personal **backend-focused** project I built to practice **CRUD operations, user authentication, and working with image uploads**. I named it **CozyNest** – the idea was to create a simple platform where users can post "listings" (kind of like properties or products) and interact with them.
 
 The goal here wasn't to make a polished product or a commercial-ready app. Instead, I focused on learning how backend systems work, especially around:
 
@@ -39,12 +39,12 @@ The goal here wasn't to make a polished product or a commercial-ready app. Inste
 
 ```
 cozynest/
-├── controllers/        # Route handler logic (e.g., createListing, addReview)
-├── init/               # App initialization configs (possibly DB or passport setup)
+├── controllers/        # Route handler logic (e.g., createListing, NewReview)
+├── init/               # App initialization configs (DB setup)
 ├── models/             # Mongoose schemas (User.js, Listing.js, Review.js)
-├── public/             # Static files like CSS, client-side JS, images
+├── public/             # Static files like CSS, client-side JS
 ├── routes/             # Express routers (e.g., listings.js, users.js, reviews.js)
-├── utils/              # Utility functions (e.g., helpers)
+├── utils/              # Utility functions (helpers)
 ├── views/              # EJS templates (form pages, layouts, show/list views)
 ├── .gitignore          # Git ignore rules (includes .env etc.)
 ├── Schema.js           # Joi schema validation logic
