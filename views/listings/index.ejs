@@ -3,7 +3,7 @@
     <!-- <form action="/listings/new" method="get">
         <button>create new listing</button>
     </form> -->
-    <ul class="listings-cards row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 row-cols-xsm-1 mt-2">
+    <ul class="listings-cards row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 row-cols-xsm-1">
         <% for(let listing of allListings) {%>
             <div class="card col listing-card">
                 <a href="/listings/<%= listing._id %>">
