@@ -54,24 +54,15 @@ cozynest/
 ├── package.json        # Project metadata and dependencies
 ├── package-lock.json   # Lockfile for npm dependencies
 ```
+### ⚙️ Environment Setup
 
-## .env Setup (Required)
+Create a `.env` file in the root directory with required environment variables like:
 
-```
-# MongoDB
-MONGODB_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/cozynest
+- MongoDB connection string
+- Cloudinary API credentials
+- Session secret
 
-# Session secret (used by express-session for signing session IDs)
-SESSION_SECRET=someSuperSecretValueHere
-
-# Cloudinary (used to upload and store images)
-CLOUDINARY_CLOUD_NAME=your_cloud_name
-CLOUDINARY_KEY=your_cloudinary_api_key
-CLOUDINARY_SECRET=your_cloudinary_api_secret
-
-# Port (optional, fallback to 5000 in code)
-PORT=5000
-```
+You can refer to `app.js`and `cloudConfig.js` to see which env vars are needed.
 
 ## How to Run Locally
 
