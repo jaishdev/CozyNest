@@ -98,6 +98,8 @@ I built CozyNest as a backend practice project — not to focus on design, but t
 * Admin/moderation tools
 * Pagination and filtering
 * Improve UI for production
-
+  
+## Deployment
+This app is deployed on Render.
 
 Let me know what you think, and if you're a beginner like me — happy to walk you through anything you find confusing in the code :)
