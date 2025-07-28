@@ -1,7 +1,7 @@
 
 # CozyNest – CRUD, Auth, and Image Upload Practice Project
 
-**Live Site:** [https://cozynest-jd6g.onrender.com](https://cozynest-jd6g.onrender.com)
+[**Live Site**]([https://cozynest-jd6g.onrender.com](https://cozynest-jd6g.onrender.com))
 
 Hi! So **CozyNest** is a personal **backend-focused** project I built to practice **CRUD operations, user authentication, and working with image uploads**. I named it **CozyNest** – the idea was to create a simple platform where users can post "listings" (kind of like properties or products) and interact with them.
 
